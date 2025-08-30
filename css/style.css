@@ -65,7 +65,7 @@ nav a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- ESTILOS NOVOS PARA A PÁGINA DE INÍCIO --- */
+
 
 /* Seção Hero (tela de boas-vindas) */
 .hero {
@@ -108,7 +108,7 @@ nav a.active {
     transform: translateY(-2px); /* Efeito de levantar o botão */
 }
 
-/* --- FIM DOS ESTILOS NOVOS --- */
+
 
 
 h1, h2 {
