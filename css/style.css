@@ -1,0 +1,191 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos aplicados ao corpo da página (body) */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho (header) que contém o menu */
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da lista do menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Estilo dos links (a) do menu */
+nav a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+nav a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Container principal para o conteúdo das páginas */
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- ESTILOS NOVOS PARA A PÁGINA DE INÍCIO --- */
+
+/* Seção Hero (tela de boas-vindas) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    /* Define uma altura mínima para ocupar boa parte da tela */
+    min-height: calc(100vh - 150px); /* 100% da altura da tela menos o espaço do header e footer */
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Tamanho grande para o nome */
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Tamanho um pouco maior para a descrição */
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Botão de chamada para ação (Call to Action) */
+.hero-btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de levantar o botão */
+}
+
+/* --- FIM DOS ESTILOS NOVOS --- */
+
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.section-spacing {
+    margin-top: 2rem;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 1.5rem;
+}
+
+.projeto {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    width: calc(50% - 12.5px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    padding: 12px 25px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    color: #888;
+}
